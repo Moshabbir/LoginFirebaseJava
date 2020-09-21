@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#68b0ab"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpEmailEdittext"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="Enter your Email"
+        android:textColorHint="#fff"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:id="@+id/signUpPasswordEdittext"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/signUpbtn"
+        android:textAllCaps="false"
+        android:text="Register"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <TextView
+        android:id="@+id/signUptextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Are you already registered ? Sign in"/>
+
+    <ProgressBar
+        android:id="@+id/signUpprogressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
